@@ -34,7 +34,7 @@ async def _human_time_duration(seconds):
 async def start(_, message: Message):
         await message.reply_text(
         f"""**I ᴀᴍ 𝒁𝒂𝒓𝒂 𝑽𝒄 𝑷𝒍𝒂𝒚𝒆𝒓   
-ʙᴏᴛ 𝙾𝚆𝙽𝙴𝙳 ʙʏ [𝑯𝒖𝒔𝒔𝒂𝒊𝒏](https://t.me/The_Death_Soul)
+ʙᴏᴛ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ [𝑯𝒖𝒔𝒔𝒂𝒊𝒏](https://t.me/The_Death_Soul)
 Thanks to add me 😜**
         """,
         reply_markup=InlineKeyboardMarkup(
