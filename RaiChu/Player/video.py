@@ -20,7 +20,7 @@ from pytgcalls.types.input_stream.quality import (
     MediumQualityVideo,
 )
 from youtubesearchpython import VideosSearch
-IMAGE_THUMBNAIL = "https://telegra.ph/file/519b6bc739756cb822039.png"
+IMAGE_THUMBNAIL = "https://te.legra.ph/file/fe6d30e2ebfb1258386d7.jpg"
 
 
 def ytsearch(query: str):
@@ -182,8 +182,8 @@ async def vplay(c: Client, m: Message):
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/BotDuniya"),
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/PmPermit")
+                            InlineKeyboardButton("🍸Channel🍸", url=f"https://t.me/ZaraSupport"),
+                            InlineKeyboardButton("🥂Support🥂", url=f"https://t.me/Love_Dear_Comrades")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
@@ -262,8 +262,8 @@ async def vplay(c: Client, m: Message):
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/BotDuniya"),
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/PmPermit")
+                            InlineKeyboardButton("🍸Channel🍸", url=f"https://t.me/ZaraSupport"),
+                            InlineKeyboardButton("🥂Support🥂", url=f"https://t.me/Love_Dear_Comrades")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
@@ -306,7 +306,7 @@ async def vplay(c: Client, m: Message):
                     else:
                         try:
                             await loser.edit(
-                            f"**𝘽𝙤𝙩 𝘿𝙪𝙣𝙞𝙮𝙖 Downloader**\n\n**Title**: {title[:22]}\n\n100% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]**"
+                            f"**𝑻𝒉𝒆𝑫𝒆𝒂𝒕𝒉𝑺𝒐𝒖𝒍 Downloader**\n\n**Title**: {title[:22]}\n\n100% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]**"
                         )
                             await call_py.join_group_call(
                                 chat_id,
