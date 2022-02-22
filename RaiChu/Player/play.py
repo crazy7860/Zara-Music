@@ -1,4 +1,4 @@
-# © 𝘽𝙤𝙩 𝘿𝙪𝙣𝙞𝙮𝙖
+# © 𝑻𝒉𝒆𝑫𝒆𝒂𝒕𝒉𝑺𝒐𝒖𝒍
 import io
 from os import path
 from typing import Callable
@@ -140,8 +140,8 @@ async def play(c: Client, m: Message):
                       InlineKeyboardButton("⏭️", "skip"),
                       InlineKeyboardButton("▶️", callback_data="cbresume"),
                   ],[
-                      InlineKeyboardButton("• Group", url=f"https://t.me/PmPermit"),
-                      InlineKeyboardButton("• Devloper", url=f"https://t.me/FriDayNetwork"),
+                      InlineKeyboardButton("• Group", url=f"https://t.me/Love_Dear_Comrades"),
+                      InlineKeyboardButton("• Devloper", url=f"https://t.me/The_Death_Soul"),
                   ],[
                       InlineKeyboardButton("🗑", callback_data="cls")],
                   ]
@@ -255,7 +255,7 @@ async def play(c: Client, m: Message):
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/PmPermit")
+                            InlineKeyboardButton("🥂 Support", url=f"https://t.me/Love_Dear_Comrades")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
@@ -300,7 +300,7 @@ async def play(c: Client, m: Message):
                     else:
                         try:
                             await suhu.edit(
-                            f"**𝘽𝙤𝙩 𝘿𝙪𝙣𝙞𝙮𝙖 Downloader**\n\n**Title**: {title[:22]}\n\n100% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]**"
+                            f"**𝑻𝒉𝒆𝑫𝒆𝒂𝒕𝒉𝑺𝒐𝒖𝒍 Downloader**\n\n**Title**: {title[:22]}\n\n100% ████████████100%\n\n**Time Taken**: 00:00 Seconds\n\n**Converting Audio[FFmpeg Process]**"
                         )
                             await call_py.join_group_call(
                                 chat_id,
