@@ -31,7 +31,7 @@
 - /rmd - to clean download sotrage
 
 ## String Session :
-[![GenerateStringName](https://img.shields.io/badge/repl.it-generateStringName-white)](https://t.me/Decode_String_bot)
+[![GenerateStringName](https://img.shields.io/badge/repl.it-generateStringName-white)](https://replit.com/@The-Death-Soul/Session-Generator#main.py)
 
 
 <h2 align="center">
