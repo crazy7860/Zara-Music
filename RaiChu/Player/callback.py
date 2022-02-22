@@ -87,17 +87,7 @@ async def cbcmds(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbbasic"))
 async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 here is the basic commands:
-
-➯ /play (song name/link) - play music on video chat
-➯ /playlist - show you the playlist
-➯ /lyric (query) - scrap the song lyric
-➯ /search (query) - search a youtube video link
-➯ /ping - show the bot ping status
-➯ /uptime - show the bot uptime status
-➯ /alive - show the bot alive info (in group)
-
- **✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** """,
+        '🏮 here is the basic commands:\x1f\x1f➯ /play (song name/link) - play music on video chat\x1f➯ /playlist - show you the playlist\x1f➯ /lyric (query) - scrap the song lyric\x1f➯ /search (query) - search a youtube video link\x1f➯ /ping - show the bot ping status\x1f➯ /uptime - show the bot uptime status\x1f➯ /alive - show the bot alive info (in group)\x1f\x1f **✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** ',
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -107,20 +97,7 @@ async def cbbasic(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbadmin"))
 async def cbadmin(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 here is the admin commands:
-
-➯ /pause - pause the stream
-➯ /resume - resume the stream
-➯ /skip - switch to next stream
-➯ /stop - stop the streaming
-➯ /vmute - mute the userbot on voice chat
-➯ /vunmute - unmute the userbot on voice chat
-➯ /volume `1-200` - adjust the volume of music (userbot must be admin)
-➯ /reload - reload bot and refresh the admin data
-➯ /userbotjoin - invite the userbot to join group
-➯ /userbotleave - order userbot to leave from group
-
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** """,
+        '🏮 here is the admin commands:\x1f\x1f➯ /pause - pause the stream\x1f➯ /resume - resume the stream\x1f➯ /skip - switch to next stream\x1f➯ /stop - stop the streaming\x1f➯ /vmute - mute the userbot on voice chat\x1f➯ /vunmute - unmute the userbot on voice chat\x1f➯ /volume `1-200` - adjust the volume of music (userbot must be admin)\x1f➯ /reload - reload bot and refresh the admin data\x1f➯ /userbotjoin - invite the userbot to join group\x1f➯ /userbotleave - order userbot to leave from group\x1f\x1f**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** ',
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -129,16 +106,7 @@ async def cbadmin(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbsudo"))
 async def cbsudo(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 here is the sudo commands:
-
-➯ /rmw - clean all raw files
-➯ /rmd - clean all downloaded files
-➯ /sysinfo - show the system information
-➯ /update - update your bot to latest version
-➯ /restart - restart your bot
-➯ /leaveall - order userbot to leave from all group
-
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** """,
+        '🏮 here is the sudo commands:\x1f\x1f➯ /rmw - clean all raw files\x1f➯ /rmd - clean all downloaded files\x1f➯ /sysinfo - show the system information\x1f➯ /update - update your bot to latest version\x1f➯ /restart - restart your bot\x1f➯ /leaveall - order userbot to leave from all group\x1f\x1f**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** ',
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -177,9 +145,7 @@ async def cbmenu(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbsetup"))
 async def cbsetup(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""**Hello !**
-» **press the button below to read the explanation and see the help commands !**
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!**""",
+        '**Hello !**\x1f» **press the button below to read the explanation and see the help commands !**\x1f**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!**',
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -188,7 +154,9 @@ async def cbsetup(_, query: CallbackQuery):
                     InlineKeyboardButton("voice", callback_data="noivoice"),
                 ],
                 [
-                    InlineKeyboardButton("How To Add Me ❓", callback_data="cbhowtouse"),
+                    InlineKeyboardButton(
+                        "How To Add Me ❓", callback_data="cbhowtouse"
+                    ),
                 ],
                 [InlineKeyboardButton("🔙 Go Back", callback_data="cbstart")],
             ]
@@ -197,13 +165,7 @@ async def cbsetup(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("noiwel"))
 async def noiwel(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 **HEAR THE WELCOME PLUGIN ( soon )**
-
-➯ /setwelcome for set welcome message.
-
-➯ /resetwelcome for reset welcome message.
-
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** """,
+        '🏮 **HEAR THE WELCOME PLUGIN ( soon )**\x1f\x1f➯ /setwelcome for set welcome message.\x1f\x1f➯ /resetwelcome for reset welcome message.\x1f\x1f**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** ',
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbsetup")]]
         ),
@@ -211,11 +173,7 @@ async def noiwel(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("noilyric"))
 async def noilyric(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 **HEAR THE LYRIC PLUGIN**
-
-➯ /lyric ( song name ) for the get lyric of song
-
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** """,
+        '🏮 **HEAR THE LYRIC PLUGIN**\x1f\x1f➯ /lyric ( song name ) for the get lyric of song\x1f\x1f**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** ',
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbsetup")]]
         ),
@@ -224,11 +182,7 @@ async def noilyric(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("noivoice"))
 async def noivoice(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""🏮 **HEAR THE VOICE PLUGIN**
-
-➯ /tts fot get voice from text message
-
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** """,
+        '🏮 **HEAR THE VOICE PLUGIN**\x1f\x1f➯ /tts fot get voice from text message\x1f\x1f**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** ',
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbsetup")]]
         ),
