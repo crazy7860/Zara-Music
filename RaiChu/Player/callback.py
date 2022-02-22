@@ -1,4 +1,4 @@
-# © NOINOI MUSIC @CFC_BOT_SUPPORT
+# © ZARA MUSIC @ZaraSupport
 
 from Process.queues import QUEUE
 from pyrogram import Client, filters
@@ -24,12 +24,12 @@ async def cbstart(_, query: CallbackQuery):
 🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**""",
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("📢 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{GROUP_SUPPORT}"),
-                InlineKeyboardButton("ꜱᴏᴜʀᴄᴇ", url="https://T.ME/Shubhanshutya"),
-                InlineKeyboardButton("✨ ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{UPDATES_CHANNEL}"),],
-                [InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbcmds"),
-                InlineKeyboardButton("❓ ꜱᴇᴛᴜᴘ", callback_data="cbsetup"),],
-                [InlineKeyboardButton(" ᴀᴅᴅ ᴍᴇᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",)],
+                [InlineKeyboardButton("🥂.ɢʀᴏᴜᴘ.🥂", url=f"https://t.me/Love_Dear_Comrades"),
+                InlineKeyboardButton("🍹.ᴏᴡɴᴇʀ.🍹", url="https://t.me/The_Death_Soul"),
+                InlineKeyboardButton("🍸.ᴄʜᴀɴɴᴇʟ.🍸", url=f"https://t.me/ZaraSupport"),],
+                [InlineKeyboardButton("📖.ᴄᴏᴍᴍᴀɴᴅꜱ.📖", callback_data="cbcmds"),
+                InlineKeyboardButton("❔.ꜱᴇᴛᴜᴘ.❔", callback_data="cbsetup"),],
+                [InlineKeyboardButton("🕊️+ᴀᴅᴅ ᴍᴇᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ+🕊️", url=f"https://t.me/{BOT_USERNAME}?startgroup=true",)],
             ]
         ),
         disable_web_page_preview=True,
@@ -41,7 +41,7 @@ async def cbguides(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""❓ **Basic Guide for using this bot:**
         
-⊙ https://telegra.ph/file/a671532c23687e6fcc431.mp4
+⊙ https://t.me/The_Death_Soul
 
 1.) **First, add me to your group.**
 2.) **Then, promote me as administrator and give all permissions except Anonymous Admin.**
@@ -52,7 +52,7 @@ async def cbguides(_, query: CallbackQuery):
 
 📌 **If the userbot not joined to video chat, make sure if the video chat already turned on, or type /userbotleave then type /userbotjoin again.**
 
-💡 **If you have a follow-up questions about this bot, you can tell it on my support chat here: @{GROUP_SUPPORT}**
+💡 **If you have a follow-up questions about this bot, you can tell it on my support chat here: @Love_Dear_Comrades**
 
 **✨ ᴘᴏᴡᴇʀᴅ ʙʏ ɴᴏɪɴᴏɪ ᴍᴜꜱɪᴄ** """,
         reply_markup=InlineKeyboardMarkup(
@@ -64,11 +64,11 @@ async def cbguides(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbcmds"))
 async def cbcmds(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""✨ **Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
+        f"""🩸 **Hello [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**
 
 » **press the button below to read the explanation and see the list of available commands !**
 
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** """,
+**✗ Pᴏᴡᴇʀᴇᴅ 🕊️ Bʏ: The_Death_Soul!** """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -97,7 +97,7 @@ async def cbbasic(_, query: CallbackQuery):
 ➯ /uptime - show the bot uptime status
 ➯ /alive - show the bot alive info (in group)
 
- **✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** """,
+ **✗ Pᴏᴡᴇʀᴇᴅ 🕊️ Bʏ: The_Death_Soul!** """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -120,7 +120,7 @@ async def cbadmin(_, query: CallbackQuery):
 ➯ /userbotjoin - invite the userbot to join group
 ➯ /userbotleave - order userbot to leave from group
 
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** """,
+**✗ Pᴏᴡᴇʀᴇᴅ 🕊️ Bʏ: The_Death_Soul!** """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -138,7 +138,7 @@ async def cbsudo(_, query: CallbackQuery):
 ➯ /restart - restart your bot
 ➯ /leaveall - order userbot to leave from all group
 
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** """,
+**✗ Pᴏᴡᴇʀᴇᴅ 🕊️ Bʏ: The_Death_Soul!** """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbcmds")]]
         ),
@@ -179,7 +179,7 @@ async def cbsetup(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""**Hello !**
 » **press the button below to read the explanation and see the help commands !**
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!**""",
+**✗ Pᴏᴡᴇʀᴇᴅ 🕊️ Bʏ: The_Death_Soul!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -203,7 +203,7 @@ async def noiwel(_, query: CallbackQuery):
 
 ➯ /resetwelcome for reset welcome message.
 
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** """,
+**✗ Pᴏᴡᴇʀᴇᴅ 🕊️ Bʏ: The_Death_Soul!** """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbsetup")]]
         ),
@@ -215,7 +215,7 @@ async def noilyric(_, query: CallbackQuery):
 
 ➯ /lyric ( song name ) for the get lyric of song
 
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** """,
+**✗ Pᴏᴡᴇʀᴇᴅ 🕊️ Bʏ: The_Death_Soul!** """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbsetup")]]
         ),
@@ -228,7 +228,7 @@ async def noivoice(_, query: CallbackQuery):
 
 ➯ /tts fot get voice from text message
 
-**✗ Pᴏᴡᴇʀᴇᴅ 💕 Bʏ: Tᴇᴀᴍ DᴇCᴏᴅᴇ!** """,
+**✗ Pᴏᴡᴇʀᴇᴅ 🕊️ Bʏ: The_Death_Soul!** """,
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙 Go Back", callback_data="cbsetup")]]
         ),
